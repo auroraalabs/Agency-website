@@ -47,13 +47,11 @@ const Footer = () => {
   return (
     <FOOTER>
       <LeftText>
-        © 2021 Built and Design by{" "}
-        <a href="https://www.youtube.com/channel/UCeYt6blRBKuNrEg_-282fSA">
-          @CodeBucks
-        </a>
+        © 2023 Sounds of Digits Official
+        <a href="https://www.youtube.com/channel/UCeYt6blRBKuNrEg_-282fSA"></a>
       </LeftText>
       <RightText>
-        Reach out to me via 😉
+        Reach out to me us on social media
         <a href="https://twitter.com/code_bucks">
           <img src={Twitter} alt="Twitter" />
         </a>
@@ -72,4 +70,4 @@ const Footer = () => {
 
 export default Footer;
 
-//© 2021 by CodeBucks. Design by @CodeBucks.
+//© 2023 Sounds of Digits.

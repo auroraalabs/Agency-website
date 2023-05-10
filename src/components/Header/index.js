@@ -2,7 +2,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/landing.svg";
+import label from "../../assets/labelheader.png";
 
 const Headers = styled.header`
   display: flex;
@@ -10,7 +11,7 @@ const Headers = styled.header`
   align-items: center;
   padding: 1rem 5rem;
   background-color: var(--nav);
-  color: var(--white);
+  color: var(--rich-black);
   position: relative;
   z-index: 500;
   @media only Screen and (max-width: 64em) {
@@ -24,11 +25,16 @@ const Headers = styled.header`
 const Logo = styled.a`
   display: flex;
   align-items: center;
-  width: 2rem;
+  h3 {
+    white-space: nowrap; // Add this line
+  }
+  width: 4rem;
   height: auto;
   cursor: pointer;
   img {
     margin-right: 0.5rem;
+    height: 100%;
+    object-fit: contain;
   }
 `;
 
@@ -45,7 +51,7 @@ const Nav = styled.nav`
   a {
     font-weight: 600;
     line-height: 1.5;
-    color: var(--white);
+    color: var(--prussian-blue);
     &::after {
       content: "";
       display: block;
@@ -70,7 +76,7 @@ const Nav = styled.nav`
 `;
 
 const Button = styled.button`
-  background-color: var(--purple);
+  background-color: var(--rich-black);
   padding: 0.5rem 1rem;
   border-radius: 20px;
   color: var(--white);
@@ -108,7 +114,7 @@ const HamburgerBtn = styled.button`
   &::before,
   &::after {
     content: "";
-    background-color: var(--white);
+    background-color: var(--prussian-blue);
     width: 2rem;
     height: 2px;
     display: inline-block;
@@ -234,18 +240,19 @@ const Header = () => {
   return (
     <Headers ref={ref}>
       <Logo>
-        <img src={logo} alt="CodeBucks" />
-        <h3>CodeBucks</h3>
+        <img src={logo} alt="Sounds of Digits" />
+        <img src={label} alt="Sounds of Digits" />
+        {/* <h3>Sounds of Digits</h3> */}
       </Logo>
       <Nav>
         <a href="#home" onClick={(e) => scrollUp("home", e)}>
           Home
         </a>
         <a href="#about" onClick={(e) => scrollUp("about", e)}>
-          About Us
+          Team
         </a>
-        <a href="#services" onClick={(e) => scrollUp("services", e)}>
-          Services
+        <a href="#artists" onClick={(e) => scrollUp("artists", e)}>
+          Artists
         </a>
         <a href="#contact" onClick={(e) => scrollUp("contact", e)}>
           <Button>Contact Us</Button>
@@ -259,10 +266,10 @@ const Header = () => {
           Home
         </a>
         <a href="#about" onClick={(e) => handleClick("about", e)}>
-          About Us
+          Team
         </a>
-        <a href="#services" onClick={(e) => handleClick("services", e)}>
-          Services
+        <a href="#artists" onClick={(e) => handleClick("artists", e)}>
+          Artists
         </a>
         <a href="#contact" onClick={(e) => handleClick("contact", e)}>
           <Button>Contact Us</Button>

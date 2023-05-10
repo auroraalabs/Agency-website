@@ -1,13 +1,17 @@
 import styled, { keyframes } from "styled-components";
 import wave from "../../assets/waves.svg";
-import rocket from "../../assets/rocket image.png";
+import rocket from "../../assets/landing2.svg";
 import human from "../../assets/human.svg";
-import hand from "../../assets/hand.svg";
 
 const move = keyframes`
 0% { transform: translateY(-5px)         }
     50% { transform: translateY(10px) translateX(10px)        }
     100% { transform: translateY(-5px)         }
+`;
+
+const spin = keyframes`
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 `;
 
 const AboutSection = styled.section`
@@ -23,15 +27,6 @@ const Waves = styled.img`
   height: auto;
   position: absolute;
   top: -1rem;
-`;
-const Hand = styled.div`
-  position: absolute;
-  bottom: -1rem;
-  right: 0;
-
-  @media only Screen and (max-width: 40em) {
-    display: none;
-  }
 `;
 
 const Main = styled.div`
@@ -78,7 +73,7 @@ const Rocket = styled.div`
   align-content: center;
   width: 40%;
   padding-bottom: 5rem;
-  animation: ${move} 2.5s ease infinite;
+  animation: ${move} 2.5s ease infinite, ${spin} 20s linear infinite;
   @media only Screen and (max-width: 40em) {
     width: 50vw;
     padding-bottom: 0;
@@ -121,9 +116,6 @@ const About = () => {
   return (
     <AboutSection id="about">
       <Waves src={wave} alt="" />
-      <Hand>
-        <img src={hand} alt="" />
-      </Hand>
       <Main>
         <div>
           <Title>About Us</Title>

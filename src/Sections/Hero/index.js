@@ -2,11 +2,11 @@
 
 import styled, { keyframes } from "styled-components";
 
-import pinkBlob from "../../assets/blobPink.png";
-import purpleBlob from "../../assets/blob purple.png";
-import whiteBlob from "../../assets/blob white.png";
+import pinkBlob from "../../assets/blob dark.png";
+import purpleBlob from "../../assets/blob blue2.png";
+import whiteBlob from "../../assets/blobblue1.png";
 import arrow from "../../assets/Arrow Right.svg";
-import Mobile from "../../assets/mobile.svg";
+import Landing from "../../assets/landing3.png";
 
 const move = keyframes`
 0% { transform: translateY(-5px)  }
@@ -17,7 +17,7 @@ const move = keyframes`
 const HomeSection = styled.section`
   width: 100vw;
   height: 45vw;
-  background-color: #0a0b10;
+  background-color: #0b0e0cff;
   display: flex;
   justify-content: center;
   position: relative;
@@ -43,7 +43,7 @@ const Blobs = styled.div`
 const PinkBlob = styled.div`
   width: calc(15% + 15vw);
   position: absolute;
-  right: 0;
+  right: 0;go
   top: calc(5rem + 5vw);
   z-index: 6;
 `;
@@ -113,27 +113,6 @@ const Lb = styled.div`
   }
 `;
 
-const Topic = styled.span`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--nav);
-  color: var(--white);
-  font-weight: 700;
-  font-size: calc(0.4rem + 0.4vw);
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-`;
-
-const Circle = styled.span`
-  display: inline-block;
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  background-color: var(--purple);
-  margin-right: 0.5rem;
-`;
-
 const Title = styled.h1`
   font-size: calc(2rem + 1vw);
   line-height: 1.2;
@@ -146,7 +125,7 @@ const SubText = styled.h5`
 `;
 
 const CTA = styled.button`
-  background-color: var(--white);
+  background-color: var(--prussian-blue);
   color: #0a0b10;
   padding: 0.5rem 1rem;
   margin-top: 1rem;
@@ -189,11 +168,11 @@ const HeroSection = () => {
 
       <MainContent id="home">
         <Lb id="leftBlock">
-          <Topic>
+          {/* <Topic>
             <Circle />
-            <span>We Build Web</span>
-          </Topic>
-          <Title>Transforming your digital presence</Title>
+            <span>Independent Label</span>
+          </Topic> */}
+          <Title>The sound of creativity</Title>
           <SubText>
             we help fast growing companies build award winning websites
           </SubText>
@@ -204,7 +183,7 @@ const HeroSection = () => {
         </Lb>
 
         <MobileSvg
-          src={Mobile}
+          src={Landing}
           alt="Mobile Svg"
           srcset=""
           width="400"

@@ -290,23 +290,23 @@ const Services = () => {
                 // toggleActions: "play none none reverse",
               },
             }
-          )
-          .to(
-            el,
-
-            {
-              opacity: 0,
-
-              ease: "power2",
-              scrollTrigger: {
-                id: `section-${index + 1}`,
-                trigger: el,
-                start: "top top+=200",
-                end: "center top+=300",
-                scrub: true,
-              },
-            }
           );
+        // .to(
+        //   el,
+
+        //   {
+        //     opacity: 0,
+
+        //     ease: "power2",
+        //     scrollTrigger: {
+        //       id: `section-${index + 1}`,
+        //       trigger: el,
+        //       start: "top top+=200",
+        //       end: "center top+=300",
+        //       scrub: true,
+        //     },
+        //   }
+        // );
       }
     });
   }, []);
@@ -319,15 +319,15 @@ const Services = () => {
   return (
     <ServiceSection id="services">
       <Background ref={ref}>
-        <Title className="title">What We Do</Title>
+        <Title className="title">Our Artists</Title>
         <Line id="line" />
         <Triangle id="triangle" />
       </Background>
 
       <Content ref={addToRefs}>
         <TextBlock
-          topic="Design"
-          title={<h1>We build award winning Designs</h1>}
+          topic="Producer"
+          title={<h1>10DIGITS</h1>}
           subText={
             <h5>
               We help clients to build great design to attract more customers
@@ -337,12 +337,12 @@ const Services = () => {
         <OBJ>
           <img src={Tube} alt="Tube Object" width="400" height="400" />
         </OBJ>
-        <SvgBlock svg="Design.svg" />
+        <SvgBlock svg="10digits.svg" />
       </Content>
       <Content ref={addToRefs}>
         <TextBlock
-          topic="Develop"
-          title={<h1>We Develope high quality Web & App</h1>}
+          topic="Hip Hop Artist"
+          title={<h1>Kemdilo Gold</h1>}
           subText={
             <h5>
               We build appropriate solution to develope your website & app with

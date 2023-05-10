@@ -3,13 +3,24 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
 
 :root{
-   --background: #eff7f9;
-   --black:#0a0b10;
+   --background: #0d1321ff;
+   --black:#0d1321ff;
    --purple:#803bec;
    --pink:#e5a1f8;
-   --white:#fff;
-   --nav:#35353f;
+   --white:#ffff;
+   --nav:#efefef;
    --nav2:#3f3d56;
+   --brown: #A23103ff;
+   --rust: #B04608ff;
+   --moonstone: #719EA9ff;
+   --sepia: #553304ff;
+   --night: #0B0E0Cff;
+   --rich-black: #0d1321ff;
+   --prussian-blue: #1d2d44ff;
+   --paynes-gray: #3e5c76ff;
+   --silver-lake-blue: #748cabff;
+   --eggshell: #efefef;
+
 }
 
 
@@ -17,7 +28,7 @@ export const GlobalStyle = createGlobalStyle`
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 html{
   ${"" /* overflow-y: scroll; */}
@@ -27,7 +38,7 @@ html{
     body,
     html,
     a {
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Montserrat', sans-serif;
             }
     body {
 

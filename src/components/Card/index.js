@@ -3,7 +3,7 @@ import styled from "styled-components";
 const CARD = styled.div`
   height: calc(8rem + 12vw);
   width: calc(9rem + 12vw);
-  background-color: var(--nav2);
+  background-color: var(--black);
   border-radius: 20px;
   position: relative;
   margin-top: calc(5rem + 5vw);

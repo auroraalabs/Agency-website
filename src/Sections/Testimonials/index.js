@@ -17,7 +17,7 @@ const Section = styled.div`
 `;
 
 const Title = styled.h1`
-  color: #0a0b10;
+  color: var(--white);
   display: inline-block;
   font-size: calc(1rem + 1.5vw);
   margin-top: 1.5rem;
@@ -31,7 +31,7 @@ const Title = styled.h1`
     bottom: 0;
     transform: translate(-50%, 0.5rem);
     /* or 100px */
-    border-bottom: 2px solid var(--purple);
+    border-bottom: 2px solid var(--paynes-gray);
   }
 `;
 
@@ -68,7 +68,7 @@ const Carousal = styled.div`
   }
 `;
 
-const Testimonials = () => {
+const Artists = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -79,32 +79,32 @@ const Testimonials = () => {
   };
 
   return (
-    <Section>
-      <Title>Few good words about us!</Title>
+    <Section id="artists">
+      <Title>Our Artists</Title>
       <Carousal>
         <Slider {...settings}>
           <Card
             text="CodeBucks has been essential part of our business. I would definetly
         recommend CodeBucks. It has been amazing to have them."
-            name="Jenny (CodeCall)"
-            image="avatar-1"
+            name="10DIGITS"
+            image="10digits"
           />
 
           <Card
             text="CodeBucks has been essential part of our business. I would definetly recommend CodeBucks. It has been amazing to have them."
-            name="Jenny (CodeCall)"
-            image="avatar-2"
+            name="Kemdilo Gold"
+            image="kemdilo"
           />
 
           <Card
             text="CodeBucks has been essential part of our business. I would definetly recommend CodeBucks. It has been amazing to have them."
-            name="Jenny (CodeCall)"
+            name="Henny Hendrx"
             image="avatar-3"
           />
 
           <Card
             text="CodeBucks has been essential part of our business. I would definetly recommend CodeBucks. It has been amazing to have them."
-            name="Jenny (CodeCall)"
+            name="Charmie"
             image="avatar-4"
           />
         </Slider>
@@ -113,4 +113,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default Artists;
