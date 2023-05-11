@@ -122,7 +122,7 @@ const Title = styled.h1`
 
 const SubText = styled.h5`
   font-size: calc(0.5rem + 0.5vw);
-  color: var(--eggshell);
+  color: var(--silver-lake-blue);
 `;
 
 const CTA = styled.a`

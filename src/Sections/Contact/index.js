@@ -128,7 +128,6 @@ const Contact = () => {
   return (
     <ContactSection id="contact">
       <Title>Get in touch</Title>
-      {/* <Text>Lorem ipsum dolor sit amet, consectetur adipisicing.</Text> */}
       <Icons>
         <a href="https://www.facebook.com/">
           {" "}

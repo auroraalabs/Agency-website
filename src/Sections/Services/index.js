@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 import styled from "styled-components";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import artistData from "../../data/artistData"; // Import the artist data
 
 import TextBlock from "../../components/TextBlock";
 import SvgBlock from "../../components/SvgBlock";
@@ -166,45 +167,17 @@ const Services = () => {
         <Triangle id="triangle" />
       </Background>
 
-      <Content ref={addToRefs}>
-        <TextBlock
-          topic="Producer"
-          title={<h1>10DIGITS</h1>}
-          subText={
-            <h5>
-              We help clients to build great design to attract more customers
-            </h5>
-          }
-        />
-        <SvgBlock svg="10digits.svg" />
-      </Content>
-      <Content ref={addToRefs}>
-        <TextBlock
-          topic="Hip Hop Artist"
-          title={<h1>Kemdilo Gold</h1>}
-          subText={
-            <h5>
-              We build appropriate solution to develope your website & app with
-              best tools available
-            </h5>
-          }
-        />
-        <SvgBlock svg="kemdilo.svg" />
-      </Content>
-      <Content>
-        <TextBlock
-          topic="Pop Artist"
-          title={<h1>Henny Hendrix</h1>}
-          subText={
-            <h5>
-              Once your system is online, we will stay on hand to help you use
-              it and provide technical support and maintenance <br /> your
-              business
-            </h5>
-          }
-        />
-        <SvgBlock svg="henny.svg" />
-      </Content>
+      {artistData.map((artist, index) => (
+        <Content key={index} ref={addToRefs}>
+          <TextBlock
+            topic={artist.topic}
+            title={<h1>{artist.title}</h1>}
+            subText={<h5>{artist.subText}</h5>}
+            links={artist.links}
+          />
+          <SvgBlock svg={artist.svg} />
+        </Content>
+      ))}
     </ServiceSection>
   );
 };

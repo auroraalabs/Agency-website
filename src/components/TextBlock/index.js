@@ -6,7 +6,7 @@ const Lb = styled.div`
   flex-direction: column;
   align-items: flex-start;
 
-  width: 50%;
+  width: 100%;
   line-height: 1.5;
   color: var(--white);
 
@@ -60,8 +60,22 @@ const SubText = styled.div`
     font-size: calc(0.5rem + 1vw);
   }
 `;
-
-const TextBlock = ({ topic, title, subText, children }) => {
+const Icons = styled.div`
+  // display: flex;
+  align-items: center;
+  img {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: filter 0.3s;
+    &:hover {
+      filter: invert(20%) sepia(100%) saturate(500%) hue-rotate(580deg)
+        brightness(100%) contrast(97%);
+    }
+  }
+`;
+const TextBlock = ({ topic, title, subText, links, children }) => {
   return (
     <Lb id="leftBlock">
       <Topic>
@@ -69,6 +83,18 @@ const TextBlock = ({ topic, title, subText, children }) => {
         <span>{topic}</span>
       </Topic>
       <Title>{title}</Title>
+      <Icons>
+        {links.map((link, index) => (
+          <a
+            key={index}
+            href={link.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={link.asset} alt={link.name} />
+          </a>
+        ))}
+      </Icons>
       <SubText>{subText}</SubText>
       {children}
     </Lb>

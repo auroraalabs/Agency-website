@@ -23,7 +23,7 @@ const Home = () => {
       {/* <About /> */}
       <Services />
       {/* <Artists /> */}
-      <Contact />
+      {/* <Contact /> */}
     </Container>
   );
 };
