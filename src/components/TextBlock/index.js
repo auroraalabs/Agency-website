@@ -25,7 +25,7 @@ const Topic = styled.span`
   justify-content: center;
 
   background-color: var(--nav);
-  color: var(--white);
+  color: var(--prussian-blue);
   font-weight: 700;
   font-size: calc(0.4rem + 0.4vw);
   padding: 0.5rem 1rem;

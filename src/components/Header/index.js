@@ -1,7 +1,7 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef, useState } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import logo from "../../assets/landing.svg";
 import label from "../../assets/labelheader.png";
 
@@ -25,9 +25,6 @@ const Headers = styled.header`
 const Logo = styled.a`
   display: flex;
   align-items: center;
-  h3 {
-    white-space: nowrap; // Add this line
-  }
   width: 4rem;
   height: auto;
   cursor: pointer;
@@ -163,6 +160,26 @@ const MobileMenu = styled.nav`
     cursor: pointer;
   }
 `;
+const move = keyframes`
+0% { transform: translateY(-5px)         }
+    50% { transform: translateY(10px) translateX(10px)        }
+    100% { transform: translateY(-5px)         }
+`;
+
+const spin = keyframes`
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+`;
+
+const LogoSpin = styled.div`
+  img {
+    width: 100%; // Add this line
+    height: 100%; // Add this line
+    object-fit: contain; // Add this line
+  }
+  animation: ${spin} 40s linear infinite;
+`;
+
 const Header = () => {
   const [click, setClick] = useState(false);
   //const handleClick = () => setClick(!click);
@@ -240,7 +257,9 @@ const Header = () => {
   return (
     <Headers ref={ref}>
       <Logo>
+        {/* <LogoSpin> */}
         <img src={logo} alt="Sounds of Digits" />
+        {/* </LogoSpin> */}
         <img src={label} alt="Sounds of Digits" />
         {/* <h3>Sounds of Digits</h3> */}
       </Logo>
@@ -248,9 +267,9 @@ const Header = () => {
         <a href="#home" onClick={(e) => scrollUp("home", e)}>
           Home
         </a>
-        <a href="#about" onClick={(e) => scrollUp("about", e)}>
+        {/* <a href="#about" onClick={(e) => scrollUp("about", e)}>
           Team
-        </a>
+        </a> */}
         <a href="#artists" onClick={(e) => scrollUp("artists", e)}>
           Artists
         </a>
@@ -265,9 +284,9 @@ const Header = () => {
         <a href="#home" onClick={(e) => handleClick("home", e)}>
           Home
         </a>
-        <a href="#about" onClick={(e) => handleClick("about", e)}>
+        {/* <a href="#about" onClick={(e) => handleClick("about", e)}>
           Team
-        </a>
+        </a> */}
         <a href="#artists" onClick={(e) => handleClick("artists", e)}>
           Artists
         </a>

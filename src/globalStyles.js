@@ -19,7 +19,7 @@ export const GlobalStyle = createGlobalStyle`
    --prussian-blue: #1d2d44ff;
    --paynes-gray: #3e5c76ff;
    --silver-lake-blue: #748cabff;
-   --eggshell: #efefef;
+   --eggshell: #EFEFEF;
 
 }
 

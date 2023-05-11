@@ -144,7 +144,7 @@ const Contact = () => {
           <img src={Instagram} alt="Instagram" />
         </a>
       </Icons>
-      <Form>
+      {/* <Form>
         <Row>
           <input name="name" type="text" placeholder="your name" />
           <input
@@ -169,7 +169,7 @@ const Contact = () => {
             Submit
           </button>
         </div>
-      </Form>
+      </Form> */}
     </ContactSection>
   );
 };

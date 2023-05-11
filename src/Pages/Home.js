@@ -20,9 +20,9 @@ const Home = () => {
   return (
     <Container>
       <HeroSection />
-      <About />
+      {/* <About /> */}
       <Services />
-      <Artists />
+      {/* <Artists /> */}
       <Contact />
     </Container>
   );

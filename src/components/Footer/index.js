@@ -9,6 +9,7 @@ const FOOTER = styled.footer`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: var(--white);
   @media only Screen and (max-width: 48em) {
     flex-direction: column;
     align-items: center;
@@ -50,7 +51,7 @@ const Footer = () => {
         © 2023 Sounds of Digits Official
         <a href="https://www.youtube.com/channel/UCeYt6blRBKuNrEg_-282fSA"></a>
       </LeftText>
-      <RightText>
+      {/* <RightText>
         Reach out to me us on social media
         <a href="https://twitter.com/code_bucks">
           <img src={Twitter} alt="Twitter" />
@@ -63,7 +64,7 @@ const Footer = () => {
         <a href="mailto:codebucks27@gmail.com?subject=Email From Your Website">
           <img src={Gmail} alt="Gmail" />
         </a>
-      </RightText>
+      </RightText> */}
     </FOOTER>
   );
 };

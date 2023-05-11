@@ -73,7 +73,7 @@ const MainContent = styled.div`
   }
 `;
 
-const MobileSvg = styled.img`
+const LandingSvg = styled.img`
   max-width: 100%;
   width: calc(30% + 20vw);
   height: auto;
@@ -117,14 +117,15 @@ const Title = styled.h1`
   font-size: calc(2rem + 1vw);
   line-height: 1.2;
   padding: 0.5rem 0;
+  color: var(--white);
 `;
 
 const SubText = styled.h5`
   font-size: calc(0.5rem + 0.5vw);
-  color: var(--nav2);
+  color: var(--eggshell);
 `;
 
-const CTA = styled.button`
+const CTA = styled.a`
   background-color: var(--prussian-blue);
   color: #0a0b10;
   padding: 0.5rem 1rem;
@@ -168,23 +169,17 @@ const HeroSection = () => {
 
       <MainContent id="home">
         <Lb id="leftBlock">
-          {/* <Topic>
-            <Circle />
-            <span>Independent Label</span>
-          </Topic> */}
           <Title>The sound of creativity</Title>
-          <SubText>
-            we help fast growing companies build award winning websites
-          </SubText>
-          <CTA>
-            Get in touch &nbsp;
+          <SubText>Taking Canada to the world</SubText>
+          <CTA href="#artists">
+            See our roster &nbsp;
             <img src={arrow} alt="cta" width="100" height="100" />
           </CTA>
         </Lb>
 
-        <MobileSvg
+        <LandingSvg
           src={Landing}
-          alt="Mobile Svg"
+          alt="Landing Svg"
           srcset=""
           width="400"
           height="400"
