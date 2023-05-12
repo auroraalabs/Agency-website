@@ -25,7 +25,7 @@ const artistData = [
   },
   {
     topic: "Pop",
-    title: "Henny Hendrix",
+    title: "Henny Hendrx",
     subText:
       "Once your system is online, we will stay on hand to help you use it and provide technical support and maintenance for your business",
     svg: "henny.svg",
