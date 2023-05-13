@@ -13,7 +13,43 @@ const artistData = [
     title: "10DIGITS",
     subText: "We help clients to build great design to attract more customers",
     svg: "10digits.svg",
-    links: [],
+    links: [
+      {
+        name: "Facebook",
+        asset: Facebook,
+        link: "https://www.facebook.com/Dj10digits",
+      },
+      {
+        name: "Twitter",
+        asset: Twitter,
+        link: "https://twitter.com/Dj10Digits",
+      },
+      {
+        name: "Instagram",
+        asset: Instagram,
+        link: "www.instagram.com/dj10digits/",
+      },
+      {
+        name: "YouTube",
+        asset: Youtube,
+        link: "https://www.youtube.com/@10DigitsVEVO",
+      },
+      {
+        name: "Spotify",
+        asset: Spotify,
+        link: "https://open.spotify.com/artist/4wMpgaN0k5SNmt6ep9ttxq",
+      },
+      {
+        name: "SoundCloud",
+        asset: SoundCloud,
+        link: "https://soundcloud.com/dj10digits",
+      },
+      {
+        name: "TikTok",
+        asset: TikTok,
+        link: "https://www.tiktok.com/@10digitsofficial",
+      },
+    ],
   },
   {
     topic: "Hip Hop",
@@ -21,7 +57,43 @@ const artistData = [
     subText:
       "We build appropriate solution to develop your website & app with best tools available",
     svg: "kemdilo.svg",
-    links: [],
+    links: [
+      {
+        name: "Facebook",
+        asset: Facebook,
+        link: " https://www.facebook.com/kemdilo",
+      },
+      {
+        name: "Twitter",
+        asset: Twitter,
+        link: "https://twitter.com/Kemdilo",
+      },
+      {
+        name: "Instagram",
+        asset: Instagram,
+        link: "www.instagram.com/Kemdilo/",
+      },
+      {
+        name: "YouTube",
+        asset: Youtube,
+        link: "https://www.youtube.com/@soundsofdigits",
+      },
+      {
+        name: "Spotify",
+        asset: Spotify,
+        link: "https://open.spotify.com/artist/7nCUAi9hzmFMue16YDRyNf?si=OumtTsP_TXay8bMefitSHA",
+      },
+      {
+        name: "SoundCloud",
+        asset: SoundCloud,
+        link: "https://soundcloud.com/kemdilogold",
+      },
+      {
+        name: "TikTok",
+        asset: TikTok,
+        link: "https://www.tiktok.com/@kemdilo",
+      },
+    ],
   },
   {
     topic: "Pop",
