@@ -105,7 +105,7 @@ const Services = () => {
     const mq = window.matchMedia("(max-width: 48em)");
     const t1 = gsap.timeline({
       scrollTrigger: {
-        trigger: document.getElementById("services"),
+        trigger: document.getElementById("artists"),
         start: "top top+=180",
         end: "bottom bottom",
         pin: element,
@@ -160,7 +160,7 @@ const Services = () => {
     }
   };
   return (
-    <ServiceSection id="services">
+    <ServiceSection id="artists">
       <Background ref={ref}>
         <Title className="title">Our Artists</Title>
         <Line id="line" />

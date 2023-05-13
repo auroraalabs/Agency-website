@@ -5,6 +5,8 @@ import styled, { keyframes } from "styled-components";
 import logo from "../../assets/landing.svg";
 import label from "../../assets/labelheader.png";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const Headers = styled.header`
   display: flex;
   justify-content: space-between;
@@ -192,7 +194,7 @@ const Header = () => {
     const element = document.getElementById(id);
     element.scrollIntoView({
       behavior: "smooth",
-      block: "end",
+      block: "start",
       inline: "nearest",
     });
   };
@@ -273,7 +275,7 @@ const Header = () => {
         <a href="#artists" onClick={(e) => scrollUp("artists", e)}>
           Artists
         </a>
-        <a href="#contact" onClick={(e) => scrollUp("contact", e)}>
+        <a href="mailto:soundsofdigits@gmail.com">
           <Button>Contact Us</Button>
         </a>
       </Nav>
@@ -284,13 +286,10 @@ const Header = () => {
         <a href="#home" onClick={(e) => handleClick("home", e)}>
           Home
         </a>
-        {/* <a href="#about" onClick={(e) => handleClick("about", e)}>
-          Team
-        </a> */}
         <a href="#artists" onClick={(e) => handleClick("artists", e)}>
           Artists
         </a>
-        <a href="#contact" onClick={(e) => handleClick("contact", e)}>
+        <a href="mailto:soundsofdigits@gmail.com">
           <Button>Contact Us</Button>
         </a>
       </MobileMenu>
