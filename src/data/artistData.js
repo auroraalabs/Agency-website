@@ -11,7 +11,8 @@ const artistData = [
   {
     topic: "Producer",
     title: "10DIGITS",
-    subText: "We help clients to build great design to attract more customers",
+    subText:
+      "10Digits, the heartbeat of Sounds of Digits, is a versatile music producer and songwriter based in Toronto and Atlanta. With a diverse background spanning electronic and dance music, he has expanded his reach into the vibrant genres of HipHop, Afrobeats, and Amapiano. Mentored by T.I. at Grand Hustle Records, 10Digits continues to make waves in the music industry with his innovative approach and dedication to his craft.",
     svg: "10digits.svg",
     links: [
       {
@@ -55,7 +56,7 @@ const artistData = [
     topic: "Hip Hop",
     title: "Kemdilo Gold",
     subText:
-      "We build appropriate solution to develop your website & app with best tools available",
+      "Kemdilo Gold, a Haitian-born recording artist and singer-songwriter, is making a strong impact in the Toronto music scene with his debut album LIMITLESS. Kemdilo is breaking barriers and exploring a new style of music called International Trap. Mentored by Atlanta rap legend T.I., he blends soul, rap, afro, and jazz influences to create a unique and purposeful sound that captivates listeners.",
     svg: "kemdilo.svg",
     links: [
       {
@@ -99,7 +100,7 @@ const artistData = [
     topic: "Pop",
     title: "Henny Hendrx",
     subText:
-      "Once your system is online, we will stay on hand to help you use it and provide technical support and maintenance for your business",
+      "Henny Hendrx, a versatile singer and producer, has embarked on an impressive journey in the music industry. He has opened for renowned acts like Tiesto, Big Sean, and Waka Flocka Flame. Based in Toronto, Miami, and Atlanta, Henny continues to captivate audiences with his innovative approach to Afrobeats/Pop, influenced by his Haitian heritage.",
     svg: "henny.svg",
     links: [
       {
